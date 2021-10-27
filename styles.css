@@ -1,111 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
 :root {
   --text-color-span: #7e7e80;
   --text-color: #14151a;
 }
 
-span {
-  color: var(--text-color-span);
-}
-
-h2,
-h1 {
-  color: var(--text-color);
-  font-family: "kumbh Sans", sans-serif;
-}
-
-h1 {
-  font-size: 1.7rem;
-}
-
-p {
-  color: var(--text-color-span);
-  font-size: 1rem;
-}
-
-p.age {
-  font-size: 1.7rem;
-}
-
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+  width: 100%;
+  height: 100vh;
 
-  background: url(images/bg-pattern-top.svg) no-repeat bottom 20vh right 51vw,
-    url(images/bg-pattern-bottom.svg) no-repeat top 45vh left 50vw,
+  background: url(images/bg-pattern-top.svg) no-repeat bottom 40vh right 50vw,
+    url(images/bg-pattern-bottom.svg) no-repeat top 35vh left 55vw,
     hsl(185, 75%, 39%);
 }
 
 main {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  min-height: 90vh;
-
-  position: relative;
+  min-height: 100%;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   background: #fff;
-  width: 350px;
-  border-radius: 1rem;
-  box-shadow: 10px 5px 5px rgb(43, 49, 54);
+  border-radius: 20px;
 }
 
-.card img {
-  border-radius: 1rem 1rem 0 0;
+.cover {
+  width: 100%;
+  min-height: 100%;
+  border-radius: 20px 20px 0 0;
 }
 
 .image-bio {
-  width: 100%;
-  position: relative;
+  position: absolute;
+  left: 35%;
+  top: 90px;
+  width: 100px;
+  border: 5px solid #fff;
+  border-radius: 50%;
 }
 
-.card .image-bio img {
-  clip-path: circle();
-  position: absolute;
-  top: -3rem;
-  left: 8rem;
-  border: 4px solid #fff;
+.image-bio img {
+  width: 100%;
   border-radius: 50%;
 }
 
 .box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-top: -5px;
+  padding: 10px 0;
 }
 
 .bio {
-  margin-top: 3rem;
+  margin-top: 60px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.bio .age {
+  margin-left: 10px;
+  font-weight: 400;
+  color: var(--text-color-span);
+}
+
+.location {
+  margin: 10px 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-color-span);
+}
+
+.stats {
+  margin-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-between;
 }
 
-.popularity {
-  border-top: 0.05rem solid #ccc;
-  width: 100%;
-  display: grid;
-  grid-auto-flow: column;
+.followers,
+.likes,
+.photos strong {
   text-align: center;
-  margin: 1rem 0;
+  font-weight: 700;
+  font-size: 18px;
 }
 
-.attribution {
-  font-size: 15px;
-  position: absolute;
-  width: 100%;
-  height: 100px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.followers p,
+.likes p,
+.photos p {
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--text-color-span);
 }

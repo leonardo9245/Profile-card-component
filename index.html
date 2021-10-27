@@ -1,70 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="/styles.css" />
 
-  <link rel="stylesheet" href="/styles.css">
+    <title>Frontend Mentor | Profile card component</title>
 
-  <title>Frontend Mentor | Profile card component</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <body>
+    <main>
+      <div class="card">
+        <img class="cover" src="/images/bg-pattern-card.svg" alt="" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-</head>
+        <div class="image-bio">
+          <img src="/images/image-victor.jpg" alt="" />
+        </div>
+        <div class="box">
+          <div class="bio">
+            <strong>Victor Crest</strong>
+            <span class="age">26</span>
+          </div>
+          <div class="location">
+            <span>London</span>
+          </div>
 
-<body>
-  <main>
-    <div class="card">
-      <img src="/images/bg-pattern-card.svg" alt="">
-  
-      <div class="image-bio">
-        <img src="/images/image-victor.jpg" alt="">
+          <div class="stats">
+            <div class="followers">
+              <strong>80K</strong>
+              <p>Followers</p>
+            </div>
+            <div class="likes">
+              <strong>803K</strong>
+              <p>Likes</p>
+            </div>
+            <div class="photos">
+              <strong>1.4K</strong>
+              <p>Photos</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="box">
-        <div class="bio">
-          <h1>Victor Crest</h1>
-          <p class="age">26</p>
-        </div>
-        <div class="">
-          <p>London</p>
-        </div>
-        
-        <div class="popularity">
-          <div class="followers">
-            <h2>80K</h2>
-            <span>Followers</span>
-          </div>
-          <div class="likes">
-            <h2>803K</h2>
-            <span>Likes</span>
-          </div>
-          <div class="photos">
-            <h2>1.4K</h2>
-            <span>Photos</span>
-          </div>
-  
-        </div>
-  
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#" target="_blank">Leonardo Reis</a>.
       </div>
-  
-    </div>
-  </main>
-  
-<footer>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#" target="_blank">Leonardo Reis</a>.
-  </div>
-</footer>
-
-</body>
-
-
+    </footer>
+  </body>
 </html>
